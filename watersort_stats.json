@@ -1,0 +1,36 @@
+{
+  "levels": {
+    "demo_01": {
+      "wins": 1,
+      "best_moves": 8,
+      "best_time_sec": 23,
+      "stars": 2
+    },
+    "lv_05": {
+      "wins": 1,
+      "best_moves": 20,
+      "best_time_sec": 58,
+      "stars": 3
+    },
+    "demo_02": {
+      "wins": 0,
+      "best_moves": null,
+      "best_time_sec": null,
+      "stars": 0
+    },
+    "demo_03": {
+      "wins": 0,
+      "best_moves": null,
+      "best_time_sec": null,
+      "stars": 0
+    },
+    "lv_04": {
+      "wins": 0,
+      "best_moves": null,
+      "best_time_sec": null,
+      "stars": 0
+    }
+  },
+  "total_restarts": 0,
+  "total_hints": 2
+}

@@ -1,32 +1,86 @@
-#Window + drawing tubes
-#Click to select tube
-# Move liquid legally
-# Win detection
-# Restart level
-# Next level
-
 LEVELS = [
-    # Each tube is bottom -> top
-    # 0 = empty tube
-    [
-        [1, 2, 1, 2],
-        [2, 1, 2, 1],
-        [],
-        [],
-    ],
-    [
-        [1, 2, 3, 1],
-        [2, 3, 1, 2],
-        [3, 1, 2, 3],
-        [],
-        [],
-    ],
-    [
-        [1, 2, 3, 4],
-        [4, 3, 2, 1],
-        [1, 3, 4, 2],
-        [2, 4, 1, 3],
-        [],
-        [],
-    ],
+    {
+        "id": "demo_01",
+        "name": "Training Flasks",
+        "difficulty": "Easy",
+        "par_moves": 8,
+        "tags": ["demo"],
+        "is_demo_level": True,
+        "unlock_after_moves": {},  # tube_index: moves_required
+        "tubes": [
+            [1, 2, 1, 2],
+            [2, 1, 2, 1],
+            [],
+            [],
+        ],
+    },
+    {
+        "id": "demo_02",
+        "name": "Catalyst Mix",
+        "difficulty": "Medium",
+        "par_moves": 14,
+        "tags": ["demo", "hint-friendly"],
+        "is_demo_level": True,
+        "unlock_after_moves": {},
+        "tubes": [
+            [1, 2, 3, 1],
+            [2, 3, 1, 2],
+            [3, 1, 2, 3],
+            [],
+            [],
+        ],
+    },
+    {
+        "id": "demo_03",
+        "name": "Seal Chamber",
+        "difficulty": "Medium",
+        "par_moves": 20,
+        "tags": ["demo", "locked-tube"],
+        "is_demo_level": True,
+        # Tube 4 is locked until 3 successful pours have happened
+        "unlock_after_moves": {4: 3},
+        "tubes": [
+            [1, 2, 3, 4],
+            [4, 3, 2, 1],
+            [1, 3, 4, 2],
+            [2, 4, 1, 3],
+            [],
+            [],
+        ],
+    },
+    {
+        "id": "lv_04",
+        "name": "Twin Currents",
+        "difficulty": "Medium",
+        "par_moves": 18,
+        "tags": ["standard"],
+        "is_demo_level": False,
+        "unlock_after_moves": {},
+        "tubes": [
+            [1, 2, 1, 3],
+            [2, 3, 2, 4],
+            [4, 1, 3, 4],
+            [3, 4, 1, 2],
+            [],
+            [],
+        ],
+    },
+    {
+        "id": "lv_05",
+        "name": "Neon Distillery",
+        "difficulty": "Hard",
+        "par_moves": 24,
+        "tags": ["standard"],
+        "is_demo_level": False,
+        "unlock_after_moves": {},
+        "tubes": [
+            [1, 2, 3, 4],
+            [5, 1, 2, 3],
+            [4, 5, 1, 2],
+            [3, 4, 5, 1],
+            [2, 3, 4, 5],
+            [],
+            [],
+        ],
+    },
 ]
