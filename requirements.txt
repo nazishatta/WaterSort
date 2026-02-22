@@ -1,5 +1,2 @@
 pygame
 
-water_sort/
- ├─ main.py
- └─ levels.py
